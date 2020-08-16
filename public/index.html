@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Your New App</title>
+    <meta name="description" content="Description">
+    <meta name=”keywords” content="Your, New, App" />
+
+    <!-- Social Networks preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="%PUBLIC_URL%">
+    <meta property="og:title" content="Your New App - Description">
+    <meta property="og:description" content="Description">
+    <meta property="og:image" content="%PUBLIC_URL%/IMAGE">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="%PUBLIC_URL%">
+    <meta property="twitter:title" content="Your New App - Description">
+    <meta property="twitter:description" content="Description">
+    <meta property="twitter:image" content="%PUBLIC_URL%/IMAGE">
+    <!--                         -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <noscript>Veuillez activer Javascript pour accéder au site.</noscript>
+    <div id="root"></div>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+      if (window.MSCompatibleInfo != null) {
+        alert('Veuillez utiliser un navigateur plus récent (Chrome, Firefox, Opéra), Estim.io n\'est pas compatible avec Internet Explorer !');
+      }
+
+      window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#ca2530"
+            },
+            "button": {
+              "background": "#b31b25"
+            }
+          },
+          "theme": "edgeless",
+          "content": {
+            "message": "En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de Cookies. ",
+            "dismiss": "D'accord",
+            "link": "Conditions générales",
+            "href": "%PUBLIC_URL%/cgu"
+          },
+          "position": "bottom-right"
+        })});
+    </script>
+  </body>
+</html>

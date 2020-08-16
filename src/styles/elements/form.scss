@@ -1,0 +1,40 @@
+.select select, .textarea {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 5px;
+  color: #363636;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  height: 40px;
+}
+
+.input{
+  height: 2.75em;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.label {
+  color: #363636;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.help {
+  display: block;
+  font-size: .60rem;
+  margin-top: .25rem;
+}
+
+
+.select:not(.is-multiple) {
+  height: 3.25em;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: $color-primary;
+  right: 1.125em;
+  z-index: 4;
+  top: 20px;
+}
